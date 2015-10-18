@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>junglestar | vivus svg animation</title>
+		<meta name="description" content="SVG Drawing Animation customization" />
+
+		<style type="text/css">
+
+			/* Base style */
+			html {
+				font-size: 24px;
+			}
+			body {
+				margin: 0 0 40px;
+				font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+				font-weight: 200;
+				color: #ccc;
+				background-color: #000;
+				word-break: break-word;
+			}
+			a, a:visited, a:hover, a:link {
+				color: inherit;
+				outline: 0;
+			}
+			small {
+				font-weight: 100;
+			}
+			p {
+				font-size: 1rem;
+				line-height: 1.4rem;
+			}
+			button, .button {
+				margin: 0; padding: 3px 6px;
+				border-radius: 6px;
+				border: 1px solid currentColor;
+				color: inherit;
+				background-color: rgba(0,0,0,0);
+				font-size: 0.6rem;
+				font-weight: 300;
+				text-decoration: none;
+				cursor: pointer;
+				outline: 0;
+			}
+			button.active, .button.active {
+				background-color: currentColor;
+			}
+			button.active span, .button.active span {
+				color: #FFFFFF;
+			}
+			i {
+				background-color: rgba(0, 0, 0, 0.05);
+				border-radius: 4px;
+			}
+			svg * {
+				fill: none;
+/*				stroke: currentColor;*/
+			}
+
+			/* Common components */
+			.bloc {
+				color: #f9f9f9;
+				padding: 1px 0 30px;
+				clear: both;
+			}
+			/* Text */
+			.bigger {
+				font-size: 1rem;
+				font-weight: 100;
+				line-height: 1.4rem;
+			}
+			.center {
+				text-align: center;
+			}
+			.clearer {
+				clear: both;
+			}
+			.striked {
+				text-decoration: line-through;
+			}
+			.italic {
+				font-style: italic;
+			}
+
+			/* Blocs */
+			.bloc-head     { color: #ddd; padding: 30px; }
+			.bloc-demo     { color: #FF495F; }
+			.bloc-timing   { color: #F7A800; }
+			.bloc-scenario { color: #4fe084; }
+			.bloc-doc      { color: #69B0CA; }
+
+			/* Custom */
+			#hi-there {
+				width: 100%;
+			}
+			.goodbye-head {
+				font-size: 1.5rem;
+				text-align: center;
+				margin-bottom: 0;
+			}
+			.goodbye-sub {
+				font-size: 0.875rem;
+				text-align: center;
+				margin: 0 0 20px;
+			}
+			.pad{padding:1rem 0; margin: 1rem 0 ;}
+		</style>
+
+	</head>
+
+	<body>
+		
+		<!-- spacer -->
+		<h1></h1>
+		
+		<!-- J* -->
+		<div class="bloc bloc-head">
+			<svg height="300" class="jeistar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" viewBox="-10 -10 1020 1020" id="hi-there" onclick="hi.reset().play();">
+
+				<path 
+				class="circlej #2ccc00" 
+				data-async 
+				data-start="1" 
+				data-duration="80"  
+				fill="none" stroke="#2ccc00" 
+				stroke-width="11" 
+				stroke-linecap="round" 
+				stroke-linejoin="round" 
+				stroke-miterlimit="10" 
+				d=" M839,132.8V564c0,115.3-30.5,200-91.2,254c-60.8,54-141.2,81.8-241.2,82.8c-102.2,1-184.2-23.8-246-74.5 C198.8,775.3,168,710,168,630c0-35.2,17.2-53,51.5-53.5c36.5-0.2,54.8,13,54.8,40c0,59.2,20.8,105.8,62,139.5 c41.2,33.8,97,50.5,167,49.7c73-0.8,129.5-21,169.2-61c40-39.8,60-99.8,60-179.8V57.5C663,20.8,584,0,500,0C224.2,0,0,224.2,0,500 s224.2,500,500,500s500-224.2,500-500C1000,355,938,224.2,839,132.8z"/>
+
+				<path 
+				class="circlej #fff" 
+				data-async 
+				data-start="1" 
+				data-duration="80" 
+				fill="none" 
+				stroke="#fff" 
+				stroke-width="11" 
+				stroke-linecap="round" 
+				stroke-linejoin="round" 
+				stroke-miterlimit="10" 
+				d=" M839,132.8V564c0,115.3-30.5,200-91.2,254c-60.8,54-141.2,81.8-241.2,82.8c-102.2,1-184.2-23.8-246-74.5 C198.8,775.3,168,710,168,630c0-35.2,17.2-53,51.5-53.5c36.5-0.2,54.8,13,54.8,40c0,59.2,20.8,105.8,62,139.5 c41.2,33.8,97,50.5,167,49.7c73-0.8,129.5-21,169.2-61c40-39.8,60-99.8,60-179.8V57.5C663,20.8,584,0,500,0C224.2,0,0,224.2,0,500 s224.2,500,500,500s500-224.2,500-500C1000,355,938,224.2,839,132.8z"/>
+
+				<polygon 
+				class="star #f00" 
+				data-async 
+				data-start="1" 
+				data-delay="20" 
+				data-duration="50" 
+				fill="none" 
+				stroke="#f00" 
+				stroke-width="11" 
+				stroke-linecap="round" 
+				stroke-linejoin="round" 
+				stroke-miterlimit="10" 
+				points=" 122.5,459.8 260.2,328.5 227.5,143 397.8,230.2 568,142.5 535.8,327.8 673.5,459 483.2,486.2 398.2,655 313,486.5 "/>
+
+				<polygon 
+				class="star #ff0" 
+				data-async 
+				data-start="1" 
+				data-delay="20" 
+				data-duration="50" 
+				fill="none" 
+				stroke="#ff0" 
+				stroke-width="11" 
+				stroke-linecap="round" 
+				stroke-linejoin="round" 
+				stroke-miterlimit="10" 
+				points=" 122.5,459.8 260.2,328.5 227.5,143 397.8,230.2 568,142.5 535.8,327.8 673.5,459 483.2,486.2 398.2,655 313,486.5 "/>
+			</svg>
+		</div>
+
+		<!-- Goodbye -->
+		<div class="content">
+			<p class="goodbye-head">Thanks for watching.</p>
+			<p class="goodbye-sub">Made <a href="http://junglestar.org" target="_blank" >somewhere in the jungle</a> with <span class="striked">♡</span> <span class="italic">a keyboard and <a href="https://github.com/maxwellito/vivus#vivusjs" target="_blank" > vivus</a></span></p>
+		</div>
+
+
+		<!-- Le scripts -->
+		<script src="dist/vivus.js"></script>
+
+		<script>
+		  var hi = new Vivus('hi-there', {type: 'scenario-sync', duration: 20, start: 'autostart'},
+				function () {
+					if (window.console) {
+						console.log('Animation finished. [log triggered from callback]');
+					}
+				});
+
+						// new Vivus('hi-there', {duration: 200}, myCallback);
+		</script>
+
+	
+	</body>
+</html>
