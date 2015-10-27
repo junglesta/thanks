@@ -1,8 +1,10 @@
-playing with:
+### ...playing with vivus.js
+
+thanks to [potrace](http://potrace.sourceforge.net/) and
+[realfavicogen](http://realfavicongenerator.net/)
+for the services.
+
 # vivus.js
-thanks to [potrace](http://potrace.sourceforge.net/) and [realfavico] (http://realfavicongenerator.net/)for the service.
-
-
 Demo available on http://maxwellito.github.io/vivus
 
 Vivus is a lightweight JavaScript class (with no dependencies) that allows you to animate SVGs, giving them the appearence of being drawn. There are a variety of different animations available, as well as the option to create a custom script to draw your SVG in whatever way you like.
