@@ -1,5 +1,7 @@
 playing with:
 # vivus.js
+thanks to [potrace](http://potrace.sourceforge.net/) and (realfavico)[http://realfavicongenerator.net/] for the service.
+
 
 Demo available on http://maxwellito.github.io/vivus
 
