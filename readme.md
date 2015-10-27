@@ -1,8 +1,10 @@
 ### vivus toy
 
-thanks to [potrace](http://potrace.sourceforge.net/) and
+also thanks to [potrace](http://potrace.sourceforge.net/) and
 [realfavicogen](http://realfavicongenerator.net/)
 for the services.
+
+made with:
 
 # vivus.js
 Demo available on http://maxwellito.github.io/vivus
