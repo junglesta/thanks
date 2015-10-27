@@ -181,7 +181,12 @@
 		</script>
 
 		<script>
-		  var hi = new Vivus('hi-there', {type: 'scenario-sync', duration: 20, start: 'autostart'},
+		  var hi = new Vivus('hi-there', {
+				type: 'scenario-sync',
+				duration: 800,
+				start: 'autostart',
+				animTimingFunction: Vivus.EASE_OUT_BOUNCE
+			},
 				function () {
 					if (window.console) {
 						console.log('Animation finished. [log triggered from callback]');
