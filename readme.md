@@ -1,4 +1,4 @@
-### ...playing with vivus.js
+### vivus toy
 
 thanks to [potrace](http://potrace.sourceforge.net/) and
 [realfavicogen](http://realfavicongenerator.net/)
