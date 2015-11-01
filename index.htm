@@ -31,65 +31,68 @@
 
 		<style type="text/css">
 
-			html {
-				font-size: 16px;
-			}
+			svg * { fill: none; }
+
+			html { font-size: 16px; }
+
 			body {
-				margin: 0 0 40px;
+				margin: 0;
 				font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 				font-weight: 200;
 				color: #ccc;
 				background-color: #000;
 				word-break: break-word;
+				font-size: 1rem;
+				line-height: 1.4;
 			}
 			a, a:visited, a:hover, a:link {
 				color: inherit;
 				outline: 0;
+				text-decoration: none;
+				border-bottom: 1px solid #ccc;
+				padding: 0 2px;
 			}
-			small {
-				font-weight: 100;
-			}
-			p {
-				font-size: 1rem;
-				line-height: 1.4rem;
-			}
-
-			i {
-				background-color: rgba(0, 0, 0, 0.05);
-				border-radius: 4px;
-			}
-			svg * {
-				fill: none;
-				/* stroke: currentColor;*/
+			a:hover{
+				background-color: #fff;
+				color: #000;
+				border-radius: 5px;
 			}
 
+			small { font-weight: 100; }
 
-			/* Custom */
-			/* Common components */
+			.jeistar{ width: 100%; }
 			.bloc {
-				color: #f9f9f9;
-				padding: 1px 0 30px;
 				clear: both;
+				color: #ddd;
+				padding: 10px;
 			}
-			.bloc-head     { color: #ddd; padding: 30px; }
-			.striked {
-				text-decoration: line-through;
-			}
-
-			#hi-there {
-				width: 100%;
+			.striked { text-decoration: line-through; }
+			.goodbye{
+				text-align: center;
+				width:100%;
 			}
 			.goodbye-head {
 				font-size: 1.5rem;
-				text-align: center;
 				margin-bottom: 0;
 			}
 			.goodbye-sub {
 				font-size: 0.875rem;
-				text-align: center;
 				margin: 0 0 20px;
 			}
 			.pad{padding:1rem 0; margin: 1rem 0 ;}
+
+			@media all and (orientation:portrait) {
+				/* Portrait  */
+				.jeistar{ height:80vw; }
+				.goodbye{
+					position: fixed;
+					bottom: 0;
+				}
+			}
+			@media all and (orientation:landscape) {
+			  /* Landscape */
+				.jeistar{ height:35vw; }
+			}
 		</style>
 
 	</head>
@@ -102,8 +105,8 @@
 		<!-- J* -->
 
 		<!-- Hi-there -->
-		<div class="bloc bloc-head">
-			<svg height="300" class="jeistar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" viewBox="-10 -10 1020 1020" id="hi-there" onclick="hi.reset().play();">
+		<div class="bloc">
+			<svg class="jeistar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" viewBox="-10 -10 1020 1020" id="hi-there" onclick="hi.reset().play();">
 
 				<path
 				class="circlej #2ccc00"
@@ -161,7 +164,7 @@
 		</div>
 
 		<!-- Goodbye -->
-		<div class="content">
+		<div class="goodbye">
 			<p class="goodbye-head">Thanks for watching.</p>
 			<p class="goodbye-sub">Made <a href="http://junglestar.org" target="_blank" >in the jungle</a> with <span class="striked">♡</span> <span class="italic">a keyboard and <a href="https://github.com/maxwellito/vivus#vivusjs" target="_blank" > vivus</a></span></p>
 		</div>
