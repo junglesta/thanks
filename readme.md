@@ -3,9 +3,8 @@
 A little animated geeky ` thank you ` from  [Junglestar](http://junglestar.org). This simple app was made using ( so thanks to..)  [potrace](http://potrace.sourceforge.net/) and
 [realfavicogen](http://realfavicongenerator.net/)
 useful online services.
-
+##&nbsp;
 made with:
-
 # vivus.js
 Demo available on http://maxwellito.github.io/vivus
 
