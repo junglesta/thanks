@@ -1,8 +1,8 @@
-### vivus toy
+### jungle vivus toy
 
-also thanks to [potrace](http://potrace.sourceforge.net/) and
+A little animated geeky ` thank you ` from  [Junglestar](http://junglestar.org). This simple app was made using ( so thanks to..)  [potrace](http://potrace.sourceforge.net/) and
 [realfavicogen](http://realfavicongenerator.net/)
-for the services.
+useful online services.
 
 made with:
 
