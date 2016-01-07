@@ -1,5 +1,6 @@
 {
-	"name": "Jungle★Star",
+	"name": "Thanks",
+	"short_name": "Jungle★Star",
 	"icons": [
 		{
 			"src": "\/android-chrome-36x36.png",
@@ -38,7 +39,7 @@
 			"density": 4
 		}
 	],
-	"start_url": "http:\/\/junglestar.org",
+	"start_url": "http:\/\/thanks.junglestar.org",
 	"background_color": "#ff0",
 	"theme_color": "#000",
 	"display": "standalone"
