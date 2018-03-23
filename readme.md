@@ -1,4 +1,9 @@
+## rough.js tests
+` index.html `
+
+
 ### jungle vivus toy
+` index_vivus.html `
 
 A little animated geeky ` thank you ` from  [Junglestar](http://junglestar.org). This simple app was made using ( so thanks to..)  [potrace](http://potrace.sourceforge.net/) and
 [realfavicogen](http://realfavicongenerator.net/)
@@ -114,31 +119,31 @@ The Vivus constructor asks for 3 parameters:
 
 ### Option list
 
-| Name       | Type     | Description |
-|------------|----------|-------------|
-|`type`      | string   | Defines what kind of animation will be used: `delayed`, `async`, `oneByOne`, `script`, `scenario` or `scenario-sync`. [Default: `delayed`] |
-|`file`      | string   | Link to the SVG to animate. If set, Vivus will create an object tag and append it to the DOM element given to the constructor. Be careful, use the `onReady` callback before playing with the Vivus instance. |
-|`start`     | string   | Defines how to trigger the animation (`inViewport` once the SVG is in the viewport, `manual` gives you the freedom to call draw method to start, `autostart` makes it start right now). [Default: `inViewport`] |
-|`duration`  | integer  | Animation duration, in frames. [Default: `200`] |
-|`delay`     | integer  | Time between the drawing of first and last path, in frames (only for `delayed` animations). |
-|`onReady`   | function | Function called when the instance is ready to play. |
-|`pathTimingFunction` | function | Timing animation function for each path element of the SVG. Check the [timing function part](#timing-function). |
-|`animTimingFunction` | function | Timing animation function for the complete SVG. Check the [timing function part](#timing-function). |
-|`dashGap`   | integer  | Whitespace extra margin between dashes. Increase it in case of glitches at the initial state of the animation. [Default: `2`] |
-|`forceRender` | boolean | Force the browser to re-render all updated path items. By default, the value is `true` on IE only. (check the 'troubleshoot' section for more details). |
-|`selfDestroy` | boolean | Removes all extra styling on the SVG, and leaves it as original. |
+| Name                 | Type     | Description                                                                                                                                                                                                     |
+|:---------------------|:---------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `type`               | string   | Defines what kind of animation will be used: `delayed`, `async`, `oneByOne`, `script`, `scenario` or `scenario-sync`. [Default: `delayed`]                                                                      |
+| `file`               | string   | Link to the SVG to animate. If set, Vivus will create an object tag and append it to the DOM element given to the constructor. Be careful, use the `onReady` callback before playing with the Vivus instance.   |
+| `start`              | string   | Defines how to trigger the animation (`inViewport` once the SVG is in the viewport, `manual` gives you the freedom to call draw method to start, `autostart` makes it start right now). [Default: `inViewport`] |
+| `duration`           | integer  | Animation duration, in frames. [Default: `200`]                                                                                                                                                                 |
+| `delay`              | integer  | Time between the drawing of first and last path, in frames (only for `delayed` animations).                                                                                                                     |
+| `onReady`            | function | Function called when the instance is ready to play.                                                                                                                                                             |
+| `pathTimingFunction` | function | Timing animation function for each path element of the SVG. Check the [timing function part](#timing-function).                                                                                                 |
+| `animTimingFunction` | function | Timing animation function for the complete SVG. Check the [timing function part](#timing-function).                                                                                                             |
+| `dashGap`            | integer  | Whitespace extra margin between dashes. Increase it in case of glitches at the initial state of the animation. [Default: `2`]                                                                                   |
+| `forceRender`        | boolean  | Force the browser to re-render all updated path items. By default, the value is `true` on IE only. (check the 'troubleshoot' section for more details).                                                         |
+| `selfDestroy`        | boolean  | Removes all extra styling on the SVG, and leaves it as original.                                                                                                                                                |
 
 
 ### Methods
 
-| Name          | Description         |
-|---------------|---------------------|
-| `play(speed)` | Plays the animation with the speed given in parameter. This value can be negative to go backward, between 0 and 1 to go slowly, or superior to 1 to go fast. [Default: `1`] |
-| `stop()`      | Stops the animation. |
-| `reset()`     | Reinitialises the SVG to the original state: undrawn. |
-| `finish()`    | Set the SVG to the final state: drawn. |
-| `setFrameProgress(progress)` | Set the progress of the animation. Progress must be a number between 0 and 1. |
-| `destroy()`   | Reset the SVG but make the instance out of order. |
+| Name                         | Description                                                                                                                                                                 |
+|:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `play(speed)`                | Plays the animation with the speed given in parameter. This value can be negative to go backward, between 0 and 1 to go slowly, or superior to 1 to go fast. [Default: `1`] |
+| `stop()`                     | Stops the animation.                                                                                                                                                        |
+| `reset()`                    | Reinitialises the SVG to the original state: undrawn.                                                                                                                       |
+| `finish()`                   | Set the SVG to the final state: drawn.                                                                                                                                      |
+| `setFrameProgress(progress)` | Set the progress of the animation. Progress must be a number between 0 and 1.                                                                                               |
+| `destroy()`                  | Reset the SVG but make the instance out of order.                                                                                                                           |
 
 These methods return the object so you can chain the actions.
 
