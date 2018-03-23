@@ -1,39 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible"
+		  content="IE=edge,chrome=1">
+		<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0">
 		<title>THANKS</title>
-		<meta name="description" content="logo packed in a single-http-request html component with vivus.js" />
-
-
-		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-		<link rel="manifest" href="/manifest.json">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#34b831">
-		<meta name="apple-mobile-web-app-title" content="Thanks!">
-		<meta name="application-name" content="Thanks!">
-		<meta name="msapplication-TileColor" content="#ffffc0">
-		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-		<meta name="theme-color" content="#000000">
-
+		<meta name="description"
+		  content="logo packed in a single-http-request html component with vivus.js" />
 		<style type="text/css">
+			svg * {
+				fill: none;
+			}
 
-			svg * { fill: none; }
-
-			html { font-size: 16px; }
+			html {
+				font-size: 16px;
+			}
 
 			body {
 				margin: 0;
@@ -45,115 +29,134 @@
 				font-size: 1rem;
 				line-height: 1.4;
 			}
-			a, a:visited, a:hover, a:link {
+
+			a,
+			a:visited,
+			a:hover,
+			a:link {
 				color: inherit;
 				outline: 0;
 				text-decoration: none;
 				border-bottom: 1px solid #ccc;
 				padding: 0 2px;
 			}
-			a:hover{
+
+			a:hover {
 				background-color: #fff;
 				color: #000;
 				border-radius: 5px;
 			}
 
-			small { font-weight: 100; }
+			small {
+				font-weight: 100;
+			}
+
 			.bloc {
 				clear: both;
 				color: #ddd;
 				padding: 10px;
 			}
-			.striked { text-decoration: line-through; }
+
+			.striked {
+				text-decoration: line-through;
+			}
+
 			.goodbye {
 				position: absolute;
 				bottom: 2rem;
-
 				text-align: center;
-				width:100%;
+				width: 100%;
 			}
+
 			.goodbye-head {
 				font-size: 1.5rem;
 				margin-bottom: 0;
 			}
+
 			.goodbye-sub {
 				font-size: 0.875rem;
 				margin: 0 0 20px;
 			}
-			.pad{padding:1rem 0; margin: 1rem 0 ;}
+
+			.pad {
+				padding: 1rem 0;
+				margin: 1rem 0;
+			}
 
 			@media all and (orientation:portrait) {
 				/* Portrait  */
-				.goodbye{
+				.goodbye {
 					position: fixed;
 					bottom: 10%;
 				}
 			}
+
 			@media all and (orientation:landscape) {
-			  /* Landscape */
+				/* Landscape */
 			}
 
 			.canvas_container {
-  			position: relative;
-			  max-width: 400px;
-			  min-width: 400px;
-			  margin: 0 auto;
+				position: relative;
+				max-width: 400px;
+				min-width: 400px;
+				margin: 0 auto;
 			}
+
 			.container {
-			  display: table-cell;
-			  vertical-align: middle;
+				display: table-cell;
+				vertical-align: middle;
 			}
+
 			.wrapper {
-			  display: table;
-			  padding: 0;
-			  width: 100%;
-			  height: 90%;
-			  position: absolute;
+				display: table;
+				padding: 0;
+				width: 100%;
+				height: 90%;
+				position: absolute;
 			}
 		</style>
-
 	</head>
 
 	<body>
+		<h1><!-- spacer --></h1>
 
-		<!-- spacer -->
-		<h1></h1>
 		<div class="wrapper">
+
 			<div class="container">
+
 				<div class="canvas_container">
-					<canvas class="canvas" id="canvas" width="400" height="400"></canvas>
+					<canvas class="canvas"
+					  id="canvas"
+					  width="400"
+					  height="400"></canvas>
+
 				</div>
+
 			</div>
+
 		</div>
-
-
-
-
-
 		<!-- Goodbye -->
+
 		<div class="goodbye">
 			<p class="goodbye-head">Thanks for watching.</p>
-			<p class="goodbye-sub">Made <a href="http://junglestar.org" target="_blank" >in the jungle</a> with <span class="striked">♡</span> <span class="italic">a keyboard and <a href="http://roughjs.com/" target="_blank" > rough.js</a></span></p>
+			<p class="goodbye-sub">Made <a href="http://junglestar.org"
+				  target="_blank">in the jungle</a> with <span class="striked">♡</span> <span class="italic">a keyboard and <a href="http://roughjs.com/" target="_blank" > rough.js</a></span></p>
+
 		</div>
-
-
-
-
-		<!-- Le scripts -->
+		<!-- Le Script -->
 		<script src="rough.js"></script>
-
 		<script>
 			const rc = rough.canvas(document.getElementById('canvas'));
-	    rc.path('M328.813 60.47L328.78 224.3c-.006 43.783-11.565 75.953-34.648 96.506-23.096 20.562-53.638 31.03-91.638 31.43-38.827.4-69.976-9.04-93.463-28.317-23.496-19.284-35.235-44.104-35.228-74.486.003-13.4 6.537-20.18 19.618-20.315 13.89-.144 20.838 4.912 20.835 15.163 0 22.482 7.86 40.15 23.593 53.008 15.72 12.85 36.863 19.146 63.433 18.87 27.783-.29 49.23-8.007 64.355-23.153 15.116-15.146 22.688-37.906 22.693-68.28l.036-192.883C261.95 17.906 231.884 10 200 10 95.233 10 10 95.234 10 200.002 10 304.77 95.233 390 200 390c104.766 0 190-85.23 190-189.998 0-55.104-23.588-104.795-61.187-139.533zM56.593 184.72l52.3-49.918-12.416-70.414 64.732 33.195L225.88 64.28l-12.297 70.435 52.39 49.832-72.33 10.334-32.296 64.1-32.408-64.044-72.35-10.215z', {
-				// fill: 'white',
-				// hachureAngle: 60,
-				// hachureGap: 5,
-				stroke: 'white',
-				roughness: 1.25,
-				strokeWidth: 2
-			});
+			rc.path(
+				'M328.813 60.47L328.78 224.3c-.006 43.783-11.565 75.953-34.648 96.506-23.096 20.562-53.638 31.03-91.638 31.43-38.827.4-69.976-9.04-93.463-28.317-23.496-19.284-35.235-44.104-35.228-74.486.003-13.4 6.537-20.18 19.618-20.315 13.89-.144 20.838 4.912 20.835 15.163 0 22.482 7.86 40.15 23.593 53.008 15.72 12.85 36.863 19.146 63.433 18.87 27.783-.29 49.23-8.007 64.355-23.153 15.116-15.146 22.688-37.906 22.693-68.28l.036-192.883C261.95 17.906 231.884 10 200 10 95.233 10 10 95.234 10 200.002 10 304.77 95.233 390 200 390c104.766 0 190-85.23 190-189.998 0-55.104-23.588-104.795-61.187-139.533zM56.593 184.72l52.3-49.918-12.416-70.414 64.732 33.195L225.88 64.28l-12.297 70.435 52.39 49.832-72.33 10.334-32.296 64.1-32.408-64.044-72.35-10.215z', {
+					fill: 'white',
+					hachureAngle: 60,
+					hachureGap: 2,
+					stroke: 'white',
+					roughness: 1.25,
+					strokeWidth: 3
+				});
 		</script>
-
-
 	</body>
+
 </html>
